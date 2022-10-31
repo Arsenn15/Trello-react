@@ -8,8 +8,9 @@ function App() {
     const [tasks, setTasks] = useState([])
 
     useEffect(() => {
+        console.log("::::effect")
         setTasks(tasksList)
-    }, [])
+    },[])
 
     const selectChange = (id, newStatus) => {
 
